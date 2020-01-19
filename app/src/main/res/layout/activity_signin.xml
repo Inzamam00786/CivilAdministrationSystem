@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context=".SignInActivity">
+
+   <RelativeLayout
+       android:id="@+id/loginrelativelayout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+
+       android:gravity="center">
+
+       <ImageView
+           android:id="@+id/paklogo"
+           android:layout_width="130dp"
+           android:layout_height="130dp"
+           android:layout_alignParentTop="true"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="51dp"
+           android:src="@drawable/paklogo" />
+       <EditText
+           android:id="@+id/loginusername"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Email"
+           android:textColorHint="@color/white"
+           android:layout_below="@id/paklogo"
+           android:layout_marginTop="40dp"
+           android:layout_marginLeft="40dp"
+           android:layout_marginRight="40dp"
+           android:textColor="@color/white"
+           android:fontFamily="sans-serif-light"
+           android:drawableLeft="@drawable/ic_email_black_24dp"
+           />
+       <EditText
+           android:id="@+id/loginpassword"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Password"
+           android:textColorHint="@color/white"
+           android:layout_below="@id/loginusername"
+           android:layout_marginTop="20dp"
+           android:layout_marginLeft="40dp"
+           android:layout_marginRight="40dp"
+           android:inputType="textPassword"
+           android:textColor="@color/white"
+           android:drawableLeft="@drawable/ic_lock_black_24dp"
+           />
+
+       <Button
+           android:id="@+id/loginbtn"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/loginpassword"
+           android:layout_marginLeft="40dp"
+           android:layout_marginRight="40dp"
+           android:layout_marginTop="20dp"
+           android:onClick="SignInMethod"
+           android:text="Login"
+           android:textAllCaps="false"
+           android:textSize="20sp"
+           android:textColor="@color/white"
+           android:fontFamily="sans-serif"
+           android:background="@drawable/btn_bg" />
+
+       <Button
+           android:id="@+id/loginregtv"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Register Yourself"
+           android:textAllCaps="false"
+           android:layout_below="@id/loginbtn"
+           android:layout_marginLeft="40dp"
+           android:layout_marginRight="40dp"
+           android:layout_marginTop="20dp"
+           android:background="@drawable/btn_bg"
+           android:textColor="@color/white"
+           android:textSize="20sp"
+           android:fontFamily="sans-serif"
+           />
+
+       <ProgressBar
+           android:id="@+id/loginprogressbar"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/loginregtv"
+           android:layout_marginTop="10dp"
+           />
+   </RelativeLayout>
+
+</ScrollView>

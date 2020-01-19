@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:gravity="center"
+    tools:context="com.inzamam.civiladministrationsystem.SplashActivity">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/myfirimageview"
+        android:layout_width="300dp"
+        android:layout_height="220dp"
+        android:drawableTop="@drawable/splash223"
+        android:drawableStart="@drawable/splash223"
+        android:background="@drawable/splash223"
+        />
+
+</RelativeLayout>

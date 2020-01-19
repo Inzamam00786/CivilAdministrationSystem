@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/mydrawerlayout"
+    android:background="@drawable/gradient"
+    tools:context="com.inzamam.civiladministrationsystem.AddNewComplaint">
+    <ScrollView
+        android:id="@+id/manualscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+        android:id="@+id/mainaddlinearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/addnewcomplainttoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="#FFFFFF"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        />
+        <LinearLayout
+            android:id="@+id/twolayercontainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/gradient">
+        <LinearLayout
+            android:id="@+id/subaddonelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+
+            android:layout_below="@id/addnewcomplainttoolbar">
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/addviewslinearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/gradient"
+            android:layout_margin="10dp"
+            android:layout_below="@id/subaddonelayout">
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:background="@drawable/gradient">
+
+               <Button
+                   android:id="@+id/clickimagebtn"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Take an Image"
+                   android:textAllCaps="false"
+                   android:background="@drawable/btn_bg"
+                   android:textColor="@color/white"
+                   android:textSize="20sp"
+                   android:fontFamily="sans-serif" />
+           </LinearLayout>
+
+            <ImageView
+                android:id="@+id/clickedimageview"
+                android:layout_width="347dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:src="@drawable/noimage" />
+            <ProgressBar
+                android:id="@+id/addprogressbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"
+                />
+
+            <ProgressBar
+                android:id="@+id/progressBar2"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/cnictextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter CNIC:"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:textSize="@dimen/myapptextsize"
+                />
+            <com.santalu.maskedittext.MaskEditText
+                android:id="@+id/cnicmaskedEditText"
+                android:drawableLeft="@drawable/ic_format_clear_black_24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:inputType="number"
+                app:met_mask="#####-#######-#"/>
+            <TextView
+                android:id="@+id/descriptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Complaint Description:-"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/myapptextsize"
+                />
+            <EditText
+                android:id="@+id/descriptionEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_speaker_notes_black_24dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/myapptextsize"
+                android:minLines="2"
+                android:maxLines="3"/>
+            <TextView
+                android:id="@+id/areatextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Area Of Complaint"
+                android:layout_marginTop="10dp"
+                android:textSize="@dimen/myapptextsize"
+                android:textColor="@color/white"
+                />
+            <EditText
+                android:id="@+id/areaedittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_room_black_24dp"
+                android:textColorHint="@color/white"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/myapptextsize"/>
+
+            <Button
+                android:id="@+id/submitbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:onClick="registerComplaintMethod"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:background="@drawable/btn_bg"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif" />
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/mynavigationview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/drawer_layout"
+        app:menu="@menu/drawer_menu"
+        android:background="@drawable/gradient"
+        ></android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context="com.inzamam.civiladministrationsystem.UpdationActivity">
+
+    <LinearLayout
+        android:id="@+id/parentofupdationlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/updationtoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:titleTextColor="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/inputcompidEditText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:hint="Enter Complaint No. "
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textSize="@dimen/myapptextsize" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="43dp"
+            android:layout_marginTop="10dp"
+            android:onClick="onsubmitbtnClick"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textSize="@dimen/myapptextsize" />
+
+        <TextView
+            android:id="@+id/complabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"
+            android:text="Edit Complaint:-"
+            android:textColor="@color/white"
+            android:textSize="@dimen/myapptextsize"
+            android:visibility="invisible" />
+        <EditText
+            android:id="@+id/loadedcompeditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Loaded From DB"
+            android:textSize="@dimen/myapptextsize"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            />
+        <TextView
+            android:id="@+id/updation_offnamelabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Officer Name:-"
+            android:textSize="@dimen/myapptextsize"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            />
+        <TextView
+            android:id="@+id/updation_offnametextview"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:text="Officer Name from DB"
+            android:textSize="@dimen/myapptextsize"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            />
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginLeft="16dp"
+           >
+           <TextView
+               android:id="@+id/updation_updatestatuslabel"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Update Status->"
+               android:textSize="@dimen/myapptextsize"
+               android:layout_marginLeft="20dp"
+               android:layout_marginTop="10dp"
+               android:textColor="@color/white"
+               android:visibility="invisible"/>
+
+           <Spinner
+               android:id="@+id/statusspinner"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="50dp"
+               android:visibility="invisible"
+               android:layout_marginTop="10dp">
+
+           </Spinner>
+       </LinearLayout>
+
+        <Button
+            android:id="@+id/updation_updatebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="30dp"
+            android:text="Update"
+            android:textAllCaps="false"
+            android:textSize="@dimen/myapptextsize"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+</ScrollView>

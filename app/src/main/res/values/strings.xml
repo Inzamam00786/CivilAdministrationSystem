@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Civil Administration System</string>
+    <string-array name="myspinnerstatusvalues">
+        <item>Solved</item>
+        <item>Not Solved</item>
+        <item>Pending</item>
+    </string-array>
+</resources>

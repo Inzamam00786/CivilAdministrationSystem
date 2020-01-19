@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/grp1" android:checkableBehavior="single">
+
+        <item android:id="@+id/viewstatus"
+            android:title="View All">
+        </item>
+        <item android:id="@+id/updateactivity"
+            android:title="View Status">
+        </item>
+        <item android:id="@+id/logoutbtn"
+            android:title="Logout">
+        </item>
+
+
+    </group>
+    <group android:id="@+id/contactgrp" android:checkableBehavior="single">
+        <item android:id="@+id/contactusitem"
+            android:title="Contact Us">
+
+        </item>
+        <item android:id="@+id/aboutus"
+            android:title="About Us">
+
+        </item>
+    </group>
+</menu>

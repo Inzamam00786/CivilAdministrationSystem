@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "797465915071",
+    "firebase_url": "https://civiladministrationsystem.firebaseio.com",
+    "project_id": "civiladministrationsystem",
+    "storage_bucket": "civiladministrationsystem.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797465915071:android:4992c139520b105d",
+        "android_client_info": {
+          "package_name": "com.inzamam.civiladministrationsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "797465915071-nnus49n09tvaa34ce2uh8p2u221uj4ag.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.inzamam.civiladministrationsystem",
+            "certificate_hash": "ea1acb8ee663660e889f0d44a87f910dea70a55f"
+          }
+        },
+        {
+          "client_id": "797465915071-d86qen2scjq0afvs32v8haqv0t0l8qfh.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "797465915071-d86qen2scjq0afvs32v8haqv0t0l8qfh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmNuLxODf3QAVuS3OKSBZVd8AiGrn708Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "797465915071-d86qen2scjq0afvs32v8haqv0t0l8qfh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

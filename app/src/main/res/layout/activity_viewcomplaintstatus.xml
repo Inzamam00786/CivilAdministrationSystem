@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context="com.inzamam.civiladministrationsystem.ViewComplaintStatus">
+
+    <LinearLayout
+        android:id="@+id/viewlayoutone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/viewstatustoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:titleTextColor="#FFFFFF"
+            />
+        <EditText
+            android:id="@+id/compideditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Complaint ID"
+            android:textSize="@dimen/myapptextsize"
+            android:layout_margin="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            />
+
+        <Button
+            android:id="@+id/statussubmitbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/btn_bg"
+            android:onClick="onSubmitBtnClick"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+
+            android:textSize="@dimen/myapptextsize" />
+        <TextView
+            android:id="@+id/labelcomptextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complaint:-"
+            android:textSize="@dimen/myapptextsize"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            android:layout_marginLeft="20dp"/>
+        <EditText
+            android:id="@+id/complaintEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Complaint will be displayed here"
+            android:textSize="@dimen/myapptextsize"
+            android:layout_margin="20dp"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            android:textColorHint="@color/white"
+            />
+        <TextView
+            android:id="@+id/compstatuslabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complaint Status:-"
+            android:textSize="@dimen/myapptextsize"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            />
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Status Here From DB"
+            android:textColor="@color/white"
+            android:textSize="@dimen/myapptextsize"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:visibility="invisible"
+            />
+        <TextView
+            android:id="@+id/offnamelabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Officer Name:-"
+            android:textSize="@dimen/myapptextsize"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:visibility="invisible"
+            />
+        <TextView
+            android:id="@+id/officernamefromdbtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Officer Name From DB"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/myapptextsize"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            />
+    </LinearLayout>
+</ScrollView>
